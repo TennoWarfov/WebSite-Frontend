@@ -1,0 +1,538 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+:focus{
+    outline: 0;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@font-face {
+  	font-family: 'Gotham Pro';
+	src: url('GothamPro-Medium.eot');
+	src: local('Gotham Pro Medium'), local('GothamPro-Medium'),
+		url('../fonts/GothamPro-Medium.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/GothamPro-Medium.woff') format('woff'),
+		url('../fonts/GothamPro-Medium.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+    	font-family: 'Gotham Pro';
+	src: url('GothamPro-Medium.eot');
+	src: local('Gotham Pro Medium'), local('GothamPro-Medium'),
+		url('../fonts/GothamPro-Medium.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/GothamPro-Medium.woff') format('woff'),
+		url('../fonts/GothamPro-Medium.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+/* roboto-regular - latin_cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/roboto-v29-latin_cyrillic-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/roboto-v29-latin_cyrillic-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+html{
+    box-sizing: border-box;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+.wrapper{
+    max-width: 1060.px;
+    margin: 0 auto;
+}
+/*Header styles starts!*/
+.header{
+    /*position: fixed;*/
+    position: absolute;
+    width: 1919.68px;
+    height: 999.47px;
+    left: 0.16px;
+    top: -4.58px;
+}
+.wrapper_header{
+    margin-left: 375px;
+    margin-top: 120.41px; 
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.time{
+}
+.language_list{
+    margin-top: 120.41px;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    width: 268.64px;
+    height: 40.7px;
+    left: 1276.36px;
+    top: 62.83px;
+}
+.language{
+    margin-right: 16.28px;
+}
+.language:last-child{
+    margin-right: 0px;
+}
+.language_link{
+    font-family: Gotham Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 13px;
+    color: #ffff;
+    text-decoration: none;
+}
+.header_link:hover, .header_link:focus, .header_link:active{
+    opacity: .75;
+}  
+/*Header styles ends!*/
+/*Main styles starts!*/
+.intro{
+    min-height: 100vh;
+    background: url(../images//BGGroup%2015.jpg) no-repeat center;
+    background-size: cover;
+}
+.info{
+    margin-top: 100px;
+}
+.deal_pr{
+    position: absolute;
+    width: 224px;
+    height: 6px;
+    left: 376.12px;
+    top: 381.23px;
+    font-family: Gotham Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 32.7%;
+    /* identical to box height, or 6px */
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.cult_pr{
+    position: absolute;
+    width: 259px;
+    height: 6px;
+    left: 376.12px;
+    top: 429.92px;
+    font-family: Gotham Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 32.7%;
+    /* identical to box height, or 6px */
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.place{
+    position: absolute;
+    width: 206px;
+    height: 44.44px;
+    left: 376.12px;
+    top: 459.39px;
+    font-family: Gotham Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 32.7%;
+    /* identical to box height, or 6px */
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.aboutKZ{
+    position: absolute;
+    width: 153px;
+    height: 6px;
+    left: 376.12px;
+    top: 527.3px;
+     font-family: Gotham Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 32.7%;
+    /* identical to box height, or 6px */
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.aboutNS{
+    position: absolute;
+    max-width: 362px;
+    height: 6px;
+    left: 376.12px;
+    top: 575.98px;
+    font-family: Gotham Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 32.7%;
+    /* identical to box height, or 6px */
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.staff{
+    position: absolute;
+    width: 137px;
+    height: 6px;
+    left: 376.12px;
+    top: 624.67px;
+    font-family: Gotham Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 32.7%;
+    /* identical to box height, or 6px */
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.media{
+    position: absolute;
+    width: 70px;
+    height: 6px;
+    left: 375px;
+    top: 673.36px;
+    font-family: Gotham Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 32.7%;
+    /* identical to box height, or 6px */
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.logotype1{
+    position: absolute;
+    width: 738px;
+    height: 153.87px;
+    left: 798.42px;
+    top: 323.92px;
+    background: url(../images/logotype%201.png);
+    margin-bottom: 25.47;
+}
+.intro_subtitle{
+    position: absolute;
+    width: 700px;
+    height: 190px;
+    left: 845px;
+    top: 503.25px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: justify;
+
+    color: #FFFFFF;
+    margin-bottom: 25.47;
+}
+.button_more{
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    left: 845px;
+    top: 718.72px;
+    background: #DBA682;
+    
+    font-family: Gotham Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 13px;
+    color: #FFFFFF;
+}
+.button_more:hover, .button_more:focus, .button_more:active{
+    background: #813d0e;
+}
+.ellipse{
+    position: absolute;
+    width: 5.12px;
+    height: 5.12px;
+    left: 375px;
+    top: 1128.37px;
+
+    background: #DBA682;
+}
+.ellipse{
+    position: absolute;
+    width: 5.12px;
+    height: 5.12px;
+    left: 382.83px;
+    top: 1128.37px;
+
+    background: #DBA682;
+}
+.ellipse{
+    position: absolute;
+    width: 5.12px;
+    height: 5.12px;
+    left: 390.66px;
+    top: 1128.37px;
+
+    background: #DBA682;
+}
+
+.text1{
+    position: absolute;
+    width: 585px;
+    height: 23px;
+    left: 375px;
+    top: 1087.77px;
+
+    font-family: Gotham Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 23px;
+    /* identical to box height, or 92% */
+    text-align: justify;
+    color: #001122;
+}
+.ellipse1{
+    position: absolute;
+    width: 5.12px;
+    height: 5.12px;
+    left: 375px;
+    top: 1128.37px;
+
+    background: #DBA682;
+}
+.ellipse2{
+    position: absolute;
+    width: 5.12px;
+    height: 5.12px;
+    left: 382.83px;
+    top: 1128.37px;
+
+    background: #DBA682;
+}
+.ellipse3{
+    position: absolute;
+    width: 5.12px;
+    height: 5.12px;
+    left: 390.66px;
+    top: 1128.37px;
+
+    background: #DBA682;
+}
+.text2{
+    position: absolute;
+    width: 585px;
+    height: 220px;
+    left: 375px;
+    top: 1150.54px;
+
+    font-family: Gotham Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    /* or 143% */
+    text-align: justify;
+    color: #001122;
+}
+.text3{
+    position: absolute;
+    width: 1170px;
+    height: 253px;
+    left: 375px;
+    top: 1410.31px;
+
+    font-family: Gotham Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 23px;
+    /* or 164% */
+    text-align: justify;
+    color: #001122;
+}
+.people{
+    position: absolute;
+    width: 544.39px;
+    height: 307.77px;
+    left: 1000.61px;
+    top: 1062.77px;
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.05)) drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.1));
+}
+.about_conferention{
+    min-height: 100vh;
+    background-image: url(../images/logotype%204.png) no-repeat center;
+    background-size: cover;
+}
+.program{
+    background: url(../images/Rectangle%2012.png) no-repeat center;
+    background-size: cover;
+    position: absolute;
+    width: 1920px;
+    height: 2191.34px;
+    left: 0px;
+    top: 1740.96px;
+}
+.conferention_program{
+    position: absolute;
+    width: 388px;
+    height: 23px;
+    left: 373.34px;
+    margin-top: 78.13px;
+
+    font-family: Gotham Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 23px;
+    /* identical to box height, or 92% */
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.program_slider{
+    margin-right: 3px;
+}
+.program_ellipse1{
+   position: absolute;
+    width: 5.12px;
+    height: 5.12px;
+    left: 375px;
+    top: 122.77px;
+}
+.program_ellipse2{
+    position: absolute;
+    width: 5.12px;
+    height: 5.12px;
+    left: 382.83px;
+    top: 122.77px;
+}
+.program_ellipse3{
+    position: absolute;
+    width: 5.12px;
+    height: 5.12px;
+    left: 390.66px;
+    top: 122.77px;
+}
+.border{
+    position: absolute;
+    width: 223.3px;
+    height: 50px;
+    left: 1321.7px;
+    top: 78.13px;
+
+    border: 1px solid #DBA682;
+    box-sizing: border-box;
+}
+.cultural_program_text{
+    /*position: absolute;*/
+    width: 171px;
+    height: 23px;
+    left: 1351.76px;
+    top: 13.63px;
+
+    font-family: Gotham Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 23px;
+    text-align: center;
+    color: #DBA682;
+}
+.white_rectangle{
+    position: absolute;
+    width: 1170px;
+    height: 1128.47px;
+    left: 375px;
+    top: 200.68px;
+    
+    background: #FFFFFF;
+    box-shadow: 0px 10px 20px rgba(149, 149, 149, 0.1);
+}
+.meeting_place{
+    position: absolute;
+    width: 1920px;
+    height: 2191.34px;
+    left: 0px;
+    top: 1740.96px;
+   /* background: linear-gradient(0deg, #001122 0%, #015C78 0.01%, #012A38 100%);*/
+}
+.place{
+    position: absolute;
+    width: 285px;
+    height: 23px;
+    left: 373.34px;
+    top: 3207.13px;
+
+    font-family: Gotham Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 23px;
+    /* identical to box height, or 92% */
+
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+body {
+    -moz-transform: scale(0.8, 0.8); /* Moz-browsers */
+    zoom: 0.8; /* Other non-webkit browsers */
+    zoom: 80%; /* Webkit browsers */
+}
